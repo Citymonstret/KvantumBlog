@@ -1,0 +1,38 @@
+* {
+    border-radius: 0 !important;
+}
+.header-text {
+    margin-top: 30px;
+}
+ul.post-info {
+    list-style-type: none;
+    padding-left: 0 !important;
+}
+ul.post-info li {
+    display: inline;
+    padding-right: 10px !important;
+}
+.post {
+    width: 100%;
+}
+#main-container {
+    padding-bottom: 150px;
+}
+.card {
+    margin-bottom: 20px;
+    border: none !important;
+}
+.card-header {
+    padding-bottom: 5px !important;
+    border: none !important;
+    background: none !important;
+}
+html, body {
+    background-color: #fafafa;
+    min-height: 100%;
+    text-color: #383838;
+    font-family: "Open Sans", Arial, serif;
+    font-size: 16px;
+    line-height: 1.4;
+    text-align: justify;
+}

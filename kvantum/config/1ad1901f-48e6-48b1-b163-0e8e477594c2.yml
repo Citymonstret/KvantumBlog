@@ -1,0 +1,19 @@
+views:
+  ffe9322f-56b2-491a-8230-6321daeecf4f:
+    filter: '[file=index].[extension=html]'
+    options:
+      folder: ./blog/
+      cacheApplicable: false
+    type: html
+  6a5d01a8-459f-4dbc-b9c1-f22ccefc8589:
+    filter: assets/stylesheets/<file>.css
+    options:
+      folder: ./blog/assets/stylesheets/
+      cacheApplicable: false
+    type: css
+  646154ee-6a69-463a-967e-75a55b3e3da3:
+    filter: assets/scripts/<file>.js
+    options:
+      folder: ./blog/assets/scripts/
+      cacheApplicable: false
+    type: javascript

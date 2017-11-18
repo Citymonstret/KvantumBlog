@@ -1,0 +1,44 @@
+buildscript {
+    repositories {
+        jcenter()
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+    }
+    dependencies {
+        classpath 'com.github.jengelman.gradle.plugins:shadow:1.2.3'
+    }
+}
+
+
+group 'xyz.kvantum'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'com.github.johnrengelman.shadow'
+
+sourceCompatibility = 1.8
+
+jar {
+    manifest {
+        attributes 'Implementation-Title': 'KvantumBlog',
+                'Implementation-Version': version,
+                'Main-Class': 'xyz.kvantum.blog.KvantumBlog'
+    }
+}
+
+allprojects {
+    repositories {
+        maven { url 'https://jitpack.io' }
+        mavenCentral();
+    }
+}
+
+dependencies {
+    compileOnly 'org.projectlombok:lombok:1.16.18'
+    compile 'xyz.kvantum.Kvantum:Implementation:95d9ec9'
+}
+
+configurations.all {
+    resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
+}

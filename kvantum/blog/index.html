@@ -1,0 +1,38 @@
+{{:
+[title: Kvantummekanik]
+[description: W.I.P Kvantum blog]
+[brand: Kvantum]
+:}}
+<!-- Doctype HTML5 -->
+<!DOCTYPE HTML>
+<html lang="en" rel="rtl">
+{{include:blog/templates/head.html}}
+<link rel="stylesheet" href="assets/stylesheets/main.css" />
+<body>
+<header>
+<div class="container" style="width: 100%">
+    <div class="row" style="width: 100%">
+        {{include:blog/templates/header.html}}
+    </div>
+</div>
+</header>
+<main>
+<div id="main-container" class="container">
+    <div class="row">
+        <div class="col" id="posts">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <button id="load-more" type="button" class="btn btn-dark" style="margin-top: 15px; width: 100%">
+                Load more posts...
+            </button>
+        </div>
+    </div>
+</div>
+</main>
+{{include:blog/templates/foot.html}}
+<script rel="script" src="assets/scripts/markdown.js"></script>
+<script rel="script" src="assets/scripts/main.js"></script>
+</body>
+</html>
