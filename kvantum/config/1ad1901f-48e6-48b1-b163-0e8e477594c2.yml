@@ -4,7 +4,7 @@ views:
     options:
       folder: ./blog/
       cacheApplicable: false
-    type: html
+    type: std
   6a5d01a8-459f-4dbc-b9c1-f22ccefc8589:
     filter: assets/stylesheets/<file>.css
     options:
