@@ -4,5 +4,4 @@ line in every markdown file is reserved for the blog entry title. The system lis
 so the entry will be updated as soon as you save your file.
 
 ## TODO:
-* Add a favicon
 * Make it a bit prettier, perhaps
